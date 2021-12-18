@@ -14,7 +14,7 @@ public class ButtonManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (this.gameObject.name == "Cube")
+        if (this.gameObject.name == "Click Btn")
         {
             mainInfoPanel.SetActive(true);
             historyPanel.SetActive(true);
