@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Click Btn
+  - Goto History Btn
+  - Goto Riddle Btn
+  - Close Btn
   layers:
   - Default
   - TransparentFX

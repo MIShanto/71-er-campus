@@ -14,7 +14,9 @@ public class ButtonManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (this.gameObject.name == "Click Btn")
+        Debug.LogError(this.gameObject.tag);
+
+        if (this.gameObject.CompareTag("Click Btn"))
         {
             mainInfoPanel.SetActive(true);
             historyPanel.SetActive(true);
@@ -24,7 +26,7 @@ public class ButtonManager : MonoBehaviour
             gotoHistoryButton.SetActive(false);
             closePanelButton.SetActive(false);
         }
-        if (this.gameObject.name == "Goto riddle button")
+        if (this.gameObject.CompareTag("Goto Riddle Btn"))
         {
             historyPanel.SetActive(false);
             gotoRiddleButton.SetActive(false);
@@ -33,7 +35,7 @@ public class ButtonManager : MonoBehaviour
             closePanelButton.SetActive(true);
             riddlePanel.SetActive(true);
         }
-        if (this.gameObject.name == "Close panel button")
+        if (this.gameObject.CompareTag("Close Btn"))
         {
             historyPanel.SetActive(false);
             gotoRiddleButton.SetActive(false);
@@ -41,7 +43,7 @@ public class ButtonManager : MonoBehaviour
             closePanelButton.SetActive(false);
             mainInfoPanel.SetActive(false);
         }
-        if (this.gameObject.name == "goto history button")
+        if (this.gameObject.CompareTag("Goto History Btn"))
         {
             historyPanel.SetActive(true);
             gotoRiddleButton.SetActive(true);
