@@ -8,6 +8,8 @@ TagManager:
   - Goto History Btn
   - Goto Riddle Btn
   - Close Btn
+  - LastBtn
+  - FirstBtn
   layers:
   - Default
   - TransparentFX

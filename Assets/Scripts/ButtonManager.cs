@@ -72,5 +72,18 @@ public class ButtonManager : MonoBehaviour
             closePanelButton.SetActive(false);
             gotoHistoryButton.SetActive(false);
         }
+        if (this.gameObject.CompareTag("LastBtn"))
+        {
+            my_animator.Play("close_panel");
+
+            historyPanel.SetActive(false);
+        }
+        if (this.gameObject.CompareTag("FirstBtn"))
+        {
+            my_animator.Play("close_panel");
+
+            //historyPanel.SetActive(false);
+        }
     }
+    
 }
